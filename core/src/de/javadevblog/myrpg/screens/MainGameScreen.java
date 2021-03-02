@@ -79,7 +79,7 @@ public static final String TAG = MainGameScreen.class.getSimpleName();
 		mapRenderer.render();
 		
 		mapRenderer.getBatch().begin();
-		mapRenderer.getBatch().draw(currentPlayerFrame, currentPlayerSprite.getX(), currentPlayerSprite.getY(), 1, 1);
+		mapRenderer.getBatch().draw(currentPlayerFrame, currentPlayerSprite.getX(), currentPlayerSprite.getY(), 2, 2);
 		mapRenderer.getBatch().end();
 	}
 	

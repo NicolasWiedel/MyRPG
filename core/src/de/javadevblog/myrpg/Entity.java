@@ -14,7 +14,7 @@ import com.badlogic.gdx.utils.Array;
 public class Entity {
 
 	private static final String TAG = Entity.class.getSimpleName();
-	private static final String DEFAULT_SPRITE_PATH = "sprites/characters/Warrior.png";
+	private static final String DEFAULT_SPRITE_PATH = "new/Sprites/char.png";
 
 	private Vector2 velocity;
 	private String entityID;
@@ -39,8 +39,8 @@ public class Entity {
 	protected Sprite frameSprite = null;
 	protected TextureRegion currentFrame = null;
 
-	public final int FRAME_WIDTH = 16;
-	public final int FRAME_HEIGHT = 16;
+	public final int FRAME_WIDTH = 64;
+	public final int FRAME_HEIGHT = 64;
 	public static Rectangle boundingBox;
 
 	public Entity() {
@@ -111,35 +111,35 @@ public class Entity {
 	private void loadDefaultSprite() {
 		Texture texture = Utility.getTextureAsset(DEFAULT_SPRITE_PATH);
 	    TextureRegion[][] textureFrames = TextureRegion.split(texture, FRAME_WIDTH, FRAME_HEIGHT);
-	    frameSprite = new Sprite(textureFrames[0][0].getTexture(), 0,0,FRAME_WIDTH, FRAME_HEIGHT);
-	    currentFrame = textureFrames[0][0];
+	    frameSprite = new Sprite(textureFrames[10][0].getTexture(), 0,0,FRAME_WIDTH, FRAME_HEIGHT);
+	    currentFrame = textureFrames[10][0];
 	}
 	
 	public void loadAllAnimations() {
 		Texture texture = Utility.getTextureAsset(DEFAULT_SPRITE_PATH);
 		TextureRegion[][] textureFrames = TextureRegion.split(texture, FRAME_WIDTH, FRAME_HEIGHT);
-		walkDownFrames = new Array<TextureRegion>(4);
-		walkLeftFrames = new Array<TextureRegion>(4);
-		walkRightFrames = new Array<TextureRegion>(4);
-		walkUpFrames = new Array<TextureRegion>(4);
+		walkDownFrames = new Array<TextureRegion>(8);
+		walkLeftFrames = new Array<TextureRegion>(8);
+		walkRightFrames = new Array<TextureRegion>(8);
+		walkUpFrames = new Array<TextureRegion>(8);
 		
-		for(int i = 0; i < 4; i++) {
-			for( int j = 0; j < 4; j++) {
+		for(int i = 8; i < 12; i++) {
+			for( int j = 0; j < 9; j++) {
 				TextureRegion region = textureFrames[i][j];
 				if(region == null) {
 					Gdx.app.debug(TAG, "Kein Frame vorhanden: " + i + ": " + j);
 				}
 				switch(i) {
-				case 0: 
+				case 10: 
 					walkDownFrames.insert(j, region);
 					break;
-				case 1: 
+				case 9: 
 					walkLeftFrames.insert(j, region);
 					break;
-				case 2: 
+				case 11: 
 					walkRightFrames.insert(j, region);
 					break;
-				case 3: 
+				case 8: 
 					walkUpFrames.insert(j, region);
 					break;
 			
