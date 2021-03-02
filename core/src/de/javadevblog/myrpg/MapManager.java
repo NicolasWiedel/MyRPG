@@ -20,9 +20,11 @@ public static final String TAG = MapManager.class.getSimpleName();
 	private Hashtable<String, Vector2>playerStartLocationTable;
 	
 //	Karten
-	private final static String TOP_WORLD = "TOP_WORLD";
-	private final static String TOWN = "TOWN";
-	private final static String CASTLE_OF_DOOM = "CASTLE_OF_DOOM";
+//	private final static String TOP_WORLD = "TOP_WORLD";
+//	private final static String TOWN = "TOWN";
+//	private final static String CASTLE_OF_DOOM = "CASTLE_OF_DOOM";
+	
+	private final static String HOME_TOWN = "HOME_TOWN";
 	
 //	Karten Layer
 	private final static String MAP_COLLISION_LAYER = "MAP_COLLISION_LAYER";
@@ -42,20 +44,22 @@ public static final String TAG = MapManager.class.getSimpleName();
 	private MapLayer portalLayer = null;
 	private MapLayer spawnsLayer = null;
 	
-	public static final float UNIT_SCALE = 1 / 16f;
+	public static final float UNIT_SCALE = 1 / 32f;
 	
 	public MapManager() {
 		playerStart = new Vector2(0, 0);
+	    
 		mapTable = new Hashtable<String, String>();
-		
-		mapTable.put(TOP_WORLD, "maps/topworld.tmx");
-		mapTable.put(TOWN, "maps/town.tmx");
-		mapTable.put(CASTLE_OF_DOOM, "maps/castle_of_doom.tmx");
+//		mapTable.put(TOP_WORLD, "maps/topworld.tmx");
+//		mapTable.put(TOWN, "maps/town.tmx");
+//		mapTable.put(CASTLE_OF_DOOM, "maps/castle_of_doom.tmx");
+		mapTable.put(HOME_TOWN, "new/maps/hometown.tmx");
 		
 		playerStartLocationTable = new Hashtable<String, Vector2>();
-		playerStartLocationTable.put(TOP_WORLD, playerStart.cpy());
-		playerStartLocationTable.put(TOWN, playerStart.cpy());
-		playerStartLocationTable.put(CASTLE_OF_DOOM, playerStart.cpy());
+//		playerStartLocationTable.put(TOP_WORLD, playerStart.cpy());
+//		playerStartLocationTable.put(TOWN, playerStart.cpy());
+//		playerStartLocationTable.put(CASTLE_OF_DOOM, playerStart.cpy());
+		playerStartLocationTable.put(HOME_TOWN, playerStart.cpy());
 		
 		playerStartPositionRect = new Vector2(0, 0);
 		closestPlayerStartPosition = new Vector2(0, 0);
@@ -114,7 +118,7 @@ public static final String TAG = MapManager.class.getSimpleName();
 	
 	public TiledMap getCurrentMap() {
 		if(currentMap == null) {
-			currentMapName = TOWN;
+			currentMapName = HOME_TOWN;
 			loadMap(currentMapName);
 		}
 		return currentMap;
