@@ -146,10 +146,10 @@ public class Entity {
 				}
 			}
 		}
-		walkDownAnimation = new Animation<TextureRegion>(0.25f, walkDownFrames, Animation.PlayMode.LOOP);
-		walkLeftAnimation = new Animation<TextureRegion>(0.25f, walkLeftFrames, Animation.PlayMode.LOOP);
-		walkRightAnimation = new Animation<TextureRegion>(0.25f, walkRightFrames, Animation.PlayMode.LOOP);
-		walkUpAnimation = new Animation<TextureRegion>(0.25f, walkUpFrames, Animation.PlayMode.LOOP);
+		walkDownAnimation = new Animation<TextureRegion>(0.1f, walkDownFrames, Animation.PlayMode.LOOP);
+		walkLeftAnimation = new Animation<TextureRegion>(0.1f, walkLeftFrames, Animation.PlayMode.LOOP);
+		walkRightAnimation = new Animation<TextureRegion>(0.1f, walkRightFrames, Animation.PlayMode.LOOP);
+		walkUpAnimation = new Animation<TextureRegion>(0.1f, walkUpFrames, Animation.PlayMode.LOOP);
 	}
 	
 	public void dispose() {

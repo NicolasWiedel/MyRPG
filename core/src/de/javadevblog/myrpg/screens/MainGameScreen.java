@@ -76,11 +76,14 @@ public static final String TAG = MainGameScreen.class.getSimpleName();
 		controller.update(delta);
 		
 		mapRenderer.setView(camera);
-		mapRenderer.render();
+//		mapRenderer.render();
+		mapRenderer.render(new int[] {0, 1, 2, 3});
 		
 		mapRenderer.getBatch().begin();
 		mapRenderer.getBatch().draw(currentPlayerFrame, currentPlayerSprite.getX(), currentPlayerSprite.getY(), 2, 2);
 		mapRenderer.getBatch().end();
+		
+		mapRenderer.render(new int[] {4, 5, 6, 7, 8});
 	}
 	
 	@Override
