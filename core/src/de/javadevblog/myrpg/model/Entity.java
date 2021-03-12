@@ -1,4 +1,4 @@
-package de.javadevblog.myrpg;
+package de.javadevblog.myrpg.model;
 
 import java.util.UUID;
 
@@ -11,6 +11,7 @@ import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
 
+import de.javadevblog.myrpg.map.MapManager;
 import de.javadevblog.myrpg.utils.Utility;
 
 public class Entity {

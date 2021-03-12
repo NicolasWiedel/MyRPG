@@ -1,4 +1,4 @@
-package de.javadevblog.myrpg;
+package de.javadevblog.myrpg.map;
 
 import java.util.Hashtable;
 
@@ -9,7 +9,7 @@ import com.badlogic.gdx.maps.objects.RectangleMapObject;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.math.Vector2;
 
-import de.javadevblog.myrpg.MapManager;
+import de.javadevblog.myrpg.map.MapManager;
 import de.javadevblog.myrpg.utils.Utility;
 
 public class MapManager {
@@ -135,6 +135,7 @@ public static final String TAG = MapManager.class.getSimpleName();
 	public Vector2 getPlayerStartUnitScaled() {
 		Vector2 playerStart = this.playerStart.cpy();
 		playerStart.set(this.playerStart.x * UNIT_SCALE, this.playerStart.y * UNIT_SCALE);
+		Gdx.app.debug(TAG, "" + playerStart);
 		return playerStart;
 	}
 	

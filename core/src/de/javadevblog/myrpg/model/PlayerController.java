@@ -1,4 +1,4 @@
-package de.javadevblog.myrpg;
+package de.javadevblog.myrpg.model;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -8,10 +8,9 @@ import com.badlogic.gdx.Input;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.math.Vector3;
 
-import de.javadevblog.myrpg.Entity;
-import de.javadevblog.myrpg.PlayerController;
-import de.javadevblog.myrpg.PlayerController.Keys;
-import de.javadevblog.myrpg.PlayerController.Mouse;
+import de.javadevblog.myrpg.model.PlayerController;
+import de.javadevblog.myrpg.model.PlayerController.Keys;
+import de.javadevblog.myrpg.model.PlayerController.Mouse;
 
 public class PlayerController implements InputProcessor {
 

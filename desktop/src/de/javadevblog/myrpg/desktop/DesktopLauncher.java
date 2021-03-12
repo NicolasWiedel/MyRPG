@@ -9,12 +9,13 @@ import de.javadevblog.myrpg.main.MyRPG;
 
 public class DesktopLauncher {
 	public static void main (String[] arg) {
+		
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
 		
 		config.title = "MyRPG";
 		config.useGL30 = false;
-		config.width = 800;
-		config.height = 600;
+		config.width = 960;
+		config.height = 640;
 		
 		Application app = new LwjglApplication(new MyRPG(), config);
 		

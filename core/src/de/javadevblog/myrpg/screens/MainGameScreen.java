@@ -12,9 +12,9 @@ import com.badlogic.gdx.maps.objects.RectangleMapObject;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import com.badlogic.gdx.math.Rectangle;
 
-import de.javadevblog.myrpg.Entity;
-import de.javadevblog.myrpg.MapManager;
-import de.javadevblog.myrpg.PlayerController;
+import de.javadevblog.myrpg.map.MapManager;
+import de.javadevblog.myrpg.model.Entity;
+import de.javadevblog.myrpg.model.PlayerController;
 import de.javadevblog.myrpg.screens.MainGameScreen;
 import de.javadevblog.myrpg.screens.MainGameScreen.VIEWPORT;
 
