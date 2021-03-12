@@ -10,7 +10,7 @@ import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.math.Vector2;
 
 import de.javadevblog.myrpg.MapManager;
-import de.javadevblog.myrpg.Utility;
+import de.javadevblog.myrpg.utils.Utility;
 
 public class MapManager {
 

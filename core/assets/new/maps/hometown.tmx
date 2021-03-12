@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.3.3" orientation="orthogonal" renderorder="right-down" width="40" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="29">
+<map version="1.2" tiledversion="1.3.3" orientation="orthogonal" renderorder="right-down" width="40" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="34">
  <tileset firstgid="1" name="landscape" tilewidth="32" tileheight="32" tilecount="256" columns="16">
   <image source="landscape.png" width="512" height="512"/>
   <terraintypes>
@@ -190,7 +190,7 @@
 </data>
  </layer>
  <objectgroup id="5" name="MAP_SPAWNS_LAYER">
-  <object id="20" name="PLAYER_START" x="614.667" y="402.667" width="36" height="41.3333"/>
+  <object id="20" name="PLAYER_START" x="638.142" y="413.845" width="37.1178" height="39.0976"/>
  </objectgroup>
  <layer id="10" name="Ground_Overlay_Layer" width="40" height="30">
   <data encoding="csv">
@@ -272,6 +272,9 @@
   <object id="26" x="1026.67" y="479.333" width="62" height="57.3333"/>
   <object id="27" x="898.667" y="290" width="62.6667" height="54.6667"/>
   <object id="28" x="513.333" y="288" width="64.6667" height="57.3333"/>
+  <object id="29" x="223.568" y="159.851" width="192.268" height="127.434"/>
+  <object id="30" x="223.568" y="289.52" width="31.2995" height="61.4811"/>
+  <object id="33" x="287.285" y="287.285" width="129.669" height="62.599"/>
  </objectgroup>
  <objectgroup id="6" name="MAP_PORTAL_LAYER">
   <object id="21" x="2" y="354" width="14" height="150.667"/>

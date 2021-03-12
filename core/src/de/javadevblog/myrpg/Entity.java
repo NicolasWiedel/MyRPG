@@ -11,6 +11,8 @@ import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
 
+import de.javadevblog.myrpg.utils.Utility;
+
 public class Entity {
 
 	private static final String TAG = Entity.class.getSimpleName();

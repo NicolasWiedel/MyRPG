@@ -1,4 +1,4 @@
-package de.javadevblog.myrpg;
+package de.javadevblog.myrpg.utils;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.assets.AssetManager;
@@ -8,7 +8,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 
-import de.javadevblog.myrpg.Utility;
+import de.javadevblog.myrpg.utils.Utility;
 
 public class Utility {
 

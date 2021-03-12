@@ -39,7 +39,7 @@ public static final String TAG = MainGameScreen.class.getSimpleName();
 	@Override
 	public void show() {
 //		Kamera Setup
-		setupViewport(10, 10);
+		setupViewport(20, 10);
 		
 		camera = new OrthographicCamera();
 		camera.setToOrtho(false, VIEWPORT.viewportWidth, VIEWPORT.viewportHeight);

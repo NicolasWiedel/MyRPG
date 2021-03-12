@@ -1,4 +1,4 @@
-package de.javadevblog.myrpg;
+package de.javadevblog.myrpg.main;
 
 import com.badlogic.gdx.Game;
 
