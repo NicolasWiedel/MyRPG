@@ -70,4 +70,19 @@ public abstract class Map {
     }
     
     public abstract void updateMapEntities(MapManager mapMgr, Batch batch, float delta);
+    
+    // getter und setter
+    public MapLayer getCollisionLayer() {
+		return collisionLayer;
+	}
+    public MapLayer getPortalLayer() {
+		return portalLayer;
+	}
+    public MapLayer getSpawnsLayer() {
+		return spawnsLayer;
+	}
+    
+    public TiledMap getCurrentMap() {
+		return currentMap;
+	}
 }
