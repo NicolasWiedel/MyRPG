@@ -15,7 +15,7 @@ public class DesktopLauncher {
 		config.title = "MyRPG";
 		config.useGL30 = false;
 		config.width = 960;
-		config.height = 640;
+		config.height = 720;
 		
 		Application app = new LwjglApplication(new MyRPG(), config);
 		
